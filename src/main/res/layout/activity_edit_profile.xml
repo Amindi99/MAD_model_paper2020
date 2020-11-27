@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical"
+    tools:context=".EditProfile">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/Edit_Profile"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/userNameEP"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/UserName"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#857F7F" />
+
+    <Button
+        android:id="@+id/btnsearchEp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/blue"
+        android:text="@string/search"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/dobEP"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/dob"
+        android:inputType="date"
+        android:textColorHint="#857F7F" />
+
+    <EditText
+        android:id="@+id/passwordEP"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:textColorHint="#857F7F" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/genderEP"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/gender"
+            android:inputType="textPersonName"
+            android:textColorHint="#857F7F" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/female" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btneditEP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/blue"
+        android:text="@string/edit"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btndeleteEP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/blue"
+        android:text="@string/delete"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</LinearLayout>

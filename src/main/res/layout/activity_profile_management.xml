@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical"
+    tools:context=".ProfileManagement">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/ProfileManagement"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etUserNamePM"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/UserName"
+        android:inputType="textPersonName"
+        android:textColorHint="#857F7F" />
+
+    <EditText
+        android:id="@+id/etdobPM"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/dob"
+        android:inputType="date"
+        android:textColorHint="#857F7F" />
+
+    <EditText
+        android:id="@+id/edPasswordPM"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:textColorHint="#857F7F" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/genderPM"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/gender"
+            android:inputType="textPersonName" />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:checked="true"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/female" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/updateProfilePM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/blue"
+        android:text="@string/update_profile"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/addPM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/blue"
+        android:text="@string/add"
+        android:textColor="#F4F4F4"
+        android:textSize="18sp" />
+
+</LinearLayout>
